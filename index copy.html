@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남북 평화 기원 태권도대회</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/a950957123.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section>
+        <div class="top">
+            <div class="header">
+                <div class="mo-btn">
+                    <span class="line-a"></span>
+                    <span class="line-b"></span>
+                    <span class="line-c"></span>
+                </div>
+            </div>
+            <div class="panel">
+                <ul>
+                    <li class="active">제 52회 9.28수복기념 <br>남북 평화 기원 태권도 대회</li>
+                    <li>2022년 의정부시장기체육대축전 <br>태권도대회</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section1">
+            <div class="bg-img"><img src="/img/bg1.jpg" alt="bg"></div>
+            <div class="tit">
+                <h2>제 52회 9.28수복기념 <br>남북 평화 기원 태권도 대회</h2>
+                <h3>
+                    전통 문화 유산인 태권도를 통해 평화를 기원하며 
+                    <br>국민 건강 및 체력 증진에 기여하고자 
+                    <br>아래와 같이 남북 평화 기원 태권도대회를 개최합니다.
+                </h3>
+            </div>
+            <p class="scroll" onclick="scrollTo()"><i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+        
+        <div class="section2" id="scroll">
+            <div class="wrap">
+                <div class="logo">
+                    <img src="/img/logo.png" alt="logo">
+                </div>
+                <ul>
+                    <li>
+                        <span>장소</span>
+                        <div class="txt">
+                            <p>의정부 체육관</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>기간</span>
+                        <div class="txt">
+                            <p>2022년 10월 1일 토 (품새/남북 평화기원 퍼포먼스)</p>
+                            <p>2022년 10월 2일 일 (겨루기)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>주최</span>
+                        <div class="txt">
+                            <p>의정부시태권도협회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>주관</span>
+                        <div class="txt">
+                            <p>의정부시태권도협회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>후원</span>
+                        <div class="txt">
+                            <p>의정부시, 경기도태권도협회, 의정부체육회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>참가자격</span>
+                        <div class="txt">
+                            <p>국기원 1품(단) 이상 소지자</p>
+                            <p>A조 - 2022년 대한태권도협회 품새/겨루기 선수 등록을 필한 자</p>
+                            <p>B조 - 2022년도 등록된 학교 및 본회 등록 태권도장 수련자</p>
+                            <p class="cr">*선수등록 미필자가 접수 시 참가비는 반환되지 않고, 실격처리됩니다.</p>
+                            <p class="cr">*B조는 중고등부만 운영되며 초등부는 조 구분 없이 진행됩니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(function(){
+            const header = $('.header');
+            $(window).scroll(function(){
+                const sct = $(this).scrollTop();
+                if(sct > 100) header.addClass('fixed');
+                else header.removeClass('fixed');
+            });
+
+            $('.mo-btn').click(function(){
+                $('body').toggleClass('open');
+            });
+            function scrollTo(){
+                $('.scroll').click(function(){
+                    $([document.documentElement, document.body]).animate({
+                        scrollTop: $("#scroll").offset().top - 70
+                    }, 1000,);
+                });
+            }
+            scrollTo();
+        });
+    </script>
+</body>
+</html>
