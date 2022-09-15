@@ -17,16 +17,10 @@ button {cursor: pointer; border:none; padding: 0;margin: 0;} select::-ms-expand 
 a:link, a:visited, a:hover, a:active {background: none; color: inherit;} 
 br {font-family: 'Dotum';}
 * {box-sizing: border-box; -webkit-tap-highlight-color: transparent;}
-@font-face {
-    font-family: 'S-CoreDream-3Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 /* common */
 body {
-    /* font-family: 'Noto Sans KR', sans-serif;  */
-    font-family: 'S-CoreDream-3Light';
+    font-family: 'Noto Sans KR', sans-serif; 
+    /* font-family: 'S-CoreDream-3Light'; */
     font-size: 16px; font-weight: normal; line-height: 1; overflow-x: hidden; color: #222;
 }
 .wrap {padding: 0 15px;}
@@ -47,7 +41,7 @@ body {
 
 /* section2 */
 .section2 {position: relative; padding: 60px 15px;}
-.section2:after {content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: url(/img/bg2.png) no-repeat center / cover; z-index: -1;}
+.section2:after {content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background: url(/img/bg2.png) no-repeat center / cover; z-index: -1;}
 .section2 .btns {display: flex; justify-content: center; align-items: center;}
 .section2 .btns li {width: calc(50% - 5px); height: 60px; display: flex; justify-content: center; align-items: center; text-align: center; background: rgba(34,34,34,.3); border-radius: 10px; cursor: pointer;}
 .section2 .btns li:first-of-type {margin-right: 5px;}
