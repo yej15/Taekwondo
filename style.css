@@ -26,6 +26,8 @@ body {font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 400
 .sec2 {background-image: url(/img/bg02.png); padding-bottom: 0;}
 .sec3, .sec4, .sec5 {background-image: url(/img/bg04.jpg);}
 .cr {color: #e14040; font-size: 12px;}
+.bold {font-weight: 700;}
+.tar {text-align: right;}
 
 .host {display: flex; flex-wrap: wrap; font-size: 12px; padding: 20px 10px;}
 .host span {font-weight: 700; font-size: 13px; display: block; margin-bottom: 5px;}
